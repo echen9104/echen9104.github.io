@@ -37,7 +37,7 @@ export default function Home() {
           <nav className='py-10 flex justify-between'>
             <ul className='flex items-center gap-6'>
               <li>
-                <h1 className='text-xl lg:text-3xl font-light'>Eric Chen's Portfolio</h1>
+                <h1 className='text-xl lg:text-3xl font-light'>Eric Chen&apos;s Portfolio</h1>
               </li>
               <li>
                   <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
@@ -62,8 +62,8 @@ export default function Home() {
                 <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
                 <p className='text-md  mx-auto py-5 leading-8 dark:text-gray-300 text-gray-800 md:text-xl max-w-lg'>
                   Hi, I recently graduated with a B.S. in Computer Science from Northeastern University.
-                  I'm a passionate developer who is curious about learning new technologies,
-                  and refining my skills. Come take a look below at what I've done and
+                  I&apos;m a passionate developer who is curious about learning new technologies,
+                  and refining my skills. Come take a look below at what I&apos;ve done and
                   other projects that I plan to work on. 
                 </p>
               </div>
