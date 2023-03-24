@@ -57,7 +57,7 @@ export default function Home() {
               </ul>
             </nav>
 
-            <div className='lg:flex items-center justify-center'>
+            <div className='lg:flex items-center justify-center px-auto'>
               <div className='text-center p-10'>
                 <h2 className='text-5xl py-2 text-blue-400 font-medium md:text-6xl'>Eric Chen</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
