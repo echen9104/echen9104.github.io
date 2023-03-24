@@ -50,14 +50,14 @@ export default function Home() {
                   className='text-4xl cursor-pointer transition hover:scale-105'/>
                 </li>
                 <li>
-                  <a className={`bg-gradient-to-br from-blue-400 to-teal-300 px-4 py-2 rounded-md ml-8 
+                  <a className={`bg-gradient-to-br from-blue-400 to-teal-300 px-4 py-2 rounded-md ml-4 
                   ${darkMode ? 'hover:text-black' : 'hover:text-white'}`}
                   href="Resume Eric Chen.pdf" download="Resume Eric Chen.pdf">Resume</a>
                 </li>
               </ul>
             </nav>
 
-            <div className='lg:flex gap-4 items-center justify-center mx-auto'>
+            <div className='lg:flex items-center justify-center mx-auto'>
               <div className='text-center p-10'>
                 <h2 className='text-5xl py-2 text-blue-400 font-medium md:text-6xl'>Eric Chen</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
@@ -69,7 +69,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className='relative h-80 w-80 mx-auto overflow-hidden bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
+              <div className='relative h-80 w-80 max-w-md mx-auto overflow-hidden bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
                 <Image className='h-80 w-80 rounded-full shadow-lg' src={EricPhoto} layout='Fill' objectFit='cover' alt=''/>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
           */}
           <section>
             <div>
-              <h3 className='text-3xl py-2 text-blue-400'>Software Skills</h3>
+              <h3 className='text-3xl py-8 text-blue-400'>Software Skills</h3>
             </div>
             <div className='md:grid md:grid-cols-3 md:gap-5'>
               <div className='text-center dark:bg-white dark:shadow-inner shadow-xl p-10 rounded-xl my-10'>
@@ -113,6 +113,7 @@ export default function Home() {
                 <p className='text-gray-800 py-1 md:text-lg'>Github</p>
                 <p className='text-gray-800 py-1 md:text-lg'>Google Appscript</p>
                 <p className='text-gray-800 py-1 md:text-lg'>TortoiseSVN</p>
+                <p className='text-gray-800 py-1 md:text-lg'>AWS Lightsail</p>
                 <p className='text-gray-800 py-1 md:text-lg'>Haskell</p>
 
               </div>
@@ -124,7 +125,7 @@ export default function Home() {
            */}
           <section>
             <div>
-              <h3 className='text-3xl py-2 text-blue-400'>Portfolio</h3>
+              <h3 className='text-3xl py-2 text-blue-400'>Projects</h3>
             </div>
             <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
               {/* 
@@ -144,15 +145,39 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='basis-1/3 flex-1'>
-                <Image src={web2} alt='' className='rounded-lg object-cover h-full w-full'/>
+              <div className='basis-1/3 flex-1 group relative transition delay-100'>
+                <Image src={web2} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
+                  <button onClick={() => {}}
+                  className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                  md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
+                  group-hover:block hover:scale-110 hidden'>Coming Soon
+                  </button>
+                </div>
               </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web3} alt='' className='rounded-lg object-cover h-full w-full'/>
+
+              <div className='basis-1/3 flex-1 group relative transition delay-100'>
+                <Image src={web3} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
+                  <button onClick={() => {}}
+                  className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                  md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
+                  group-hover:block hover:scale-110 hidden'>Coming Soon
+                  </button>
+                </div>
               </div>
-              <div className='basis-1/3 flex-1'>
-                <Image src={web4} alt='' className='rounded-lg object-cover h-full w-full'/>
+
+              <div className='basis-1/3 flex-1 group relative transition delay-100'>
+                <Image src={web4} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
+                  <button onClick={() => {}}
+                  className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                  md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
+                  group-hover:block hover:scale-110 hidden'>Coming Soon
+                  </button>
+                </div>
               </div>
+      
             </div>
           </section>
         </main>
