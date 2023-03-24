@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div className='md:grid md:grid-cols-3 md:gap-5'>
               <div className='text-center dark:bg-white dark:shadow-inner shadow-xl p-10 rounded-xl my-10'>
-                <Image className='mx-auto h-[12vw] w-auto' src={frontend}/>
+                <Image className='mx-auto h-[12vw] w-auto' src={frontend} alt=''/>
                 <h3 className='text-blue-400 text-lg font-medium pt-8 pb-2 md:text-2xl'>Front End</h3>
                 <p className='text-gray-800 py-1 md:text-lg'>Javascript</p>
                 <p className='text-gray-800 py-1 md:text-lg'>Typescript</p>
@@ -94,7 +94,7 @@ export default function Home() {
 
               </div>
               <div className='text-center dark:bg-white dark:shadow-inner shadow-xl p-10 rounded-xl my-10'>
-                <Image className='mx-auto h-[12vw] w-auto' src={code}/>
+                <Image className='mx-auto h-[12vw] w-auto' src={code} alt=''/>
                 <h3 className='text-blue-400 text-lg font-medium pt-8 pb-2 md:text-2xl'>Back End</h3>
                 <p className='text-gray-800 py-1 md:text-lg'>Python</p>
                 <p className='text-gray-800 py-1 md:text-lg'>C++</p>
@@ -107,7 +107,7 @@ export default function Home() {
 
               </div>
               <div className='text-center dark:bg-white dark:shadow-inner shadow-xl p-10 rounded-xl my-10'>
-                <Image className='mx-auto h-[12vw] w-auto' src={skills}/>
+                <Image className='mx-auto h-[12vw] w-auto' src={skills} alt=''/>
                 <h3 className='text-blue-400 text-lg font-medium pt-8 pb-2 md:text-2xl'>Technologies and Skills</h3>
                 <p className='text-gray-800 py-1 md:text-lg'>Github</p>
                 <p className='text-gray-800 py-1 md:text-lg'>Google Appscript</p>
@@ -130,7 +130,7 @@ export default function Home() {
                 Netflix project
               */}
               <div className='basis-1/3 flex-1 group relative transition delay-100'>
-                <Image src={netflix} className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <Image src={netflix} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
                   <button onClick={() => visitSite('https://github.com/echen9104/netflix-copy')}
                   className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
@@ -144,13 +144,13 @@ export default function Home() {
               </div>
 
               <div className='basis-1/3 flex-1'>
-                <Image src={web2} className='rounded-lg object-cover h-full w-full'/>
+                <Image src={web2} alt='' className='rounded-lg object-cover h-full w-full'/>
               </div>
               <div className='basis-1/3 flex-1'>
-                <Image src={web3} className='rounded-lg object-cover h-full w-full'/>
+                <Image src={web3} alt='' className='rounded-lg object-cover h-full w-full'/>
               </div>
               <div className='basis-1/3 flex-1'>
-                <Image src={web4} className='rounded-lg object-cover h-full w-full'/>
+                <Image src={web4} alt='' className='rounded-lg object-cover h-full w-full'/>
               </div>
             </div>
           </section>
