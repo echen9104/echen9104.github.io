@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   
-  function visitSite(url: string): import("react").MouseEventHandler<HTMLButtonElement> | undefined{
+  function visitSite(url: string): void{
     try {
       window.open(url, "_blank")?.focus();
     } catch(err) {
