@@ -57,11 +57,11 @@ export default function Home() {
               </ul>
             </nav>
 
-            <div className='lg:flex items-center justify-center px-auto'>
+            <div className='lg:flex gap-4 items-center justify-center mx-auto'>
               <div className='text-center p-10'>
                 <h2 className='text-5xl py-2 text-blue-400 font-medium md:text-6xl'>Eric Chen</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
-                <p className='text-md  mx-auto py-5 leading-8 dark:text-gray-300 text-gray-800 md:text-xl max-w-lg'>
+                <p className='text-md mx-auto py-5 leading-8 dark:text-gray-300 text-gray-800 md:text-xl max-w-lg'>
                   Hi, I recently graduated with a B.S. in Computer Science from Northeastern University.
                   I&apos;m a passionate developer who is curious about learning new technologies,
                   and refining my skills. Come take a look below at what I&apos;ve done and
@@ -69,9 +69,9 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className='relative h-80 w-80 overflow-hidden mx-auto bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
-              <Image className='h-80 w-80 rounded-full shadow-lg' src={EricPhoto} layout='Fill' objectFit='cover' alt=''/>
-            </div>
+              <div className='relative h-80 w-80 mx-auto overflow-hidden bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
+                <Image className='h-80 w-80 rounded-full shadow-lg' src={EricPhoto} layout='Fill' objectFit='cover' alt=''/>
+              </div>
             </div>
           </section>
 
