@@ -69,7 +69,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className='relative h-80 w-80 md:mx-0 sm:mx-auto overflow-hidden bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
+              <div className='relative h-80 w-80 lg:mx-0 mx-auto overflow-hidden bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
                 <Image className='h-80 w-80 rounded-full' src={EricPhoto} layout='Fill' objectFit='cover' alt=''/>
               </div>
             </div>
