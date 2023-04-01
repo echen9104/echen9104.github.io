@@ -131,7 +131,7 @@ export default function Home() {
               {/* 
                 Netflix project
               */}
-              <div className='basis-1/3 flex-1 group relative transition delay-100 hover:scale-105'>
+              <div className='basis-1/3 flex-1 group relative transition delay-100 shadow-lg hover:scale-105'>
                 <Image src={netflix} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
                   <button onClick={() => visitSite('https://github.com/echen9104/netflix-copy')}
@@ -145,21 +145,25 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='basis-1/3 flex-1 group relative transition delay-100 hover:scale-105'>
+              <div className='basis-1/3 flex-1 group relative transition shadow-lg delay-100 hover:scale-105'>
                 <Image src={newclo} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
-                  <button onClick={() => visitSite('https://github.com/echen9104/ecommerce-store')}
+                  <button 
+                    onClick={() => visitSite('https://github.com/echen9104/ecommerce-store')}
                     className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
-                    md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
-                    group-hover:block hover:scale-110 hidden'
+                      md:h-16 md:w-24 w-20 h-20 opacity-80 px-3 py-2 transition
+                      group-hover:block hover:scale-110 hidden hover:opacity-100'
                   >
                     Github
                   </button>
 
-                  <button onClick={() => {}}
-                  className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
-                  md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
-                  group-hover:block hover:scale-110 hidden'>Coming Soon
+                  <button 
+                    onClick={() => {}}
+                    className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                      md:h-16 md:w-24 w-20 h-20 opacity-80 px-3 py-2 transition
+                      group-hover:block hover:scale-110 hidden hover:opacity-100'
+                  >
+                    Coming Soon
                   </button>
                 </div>
               </div>
