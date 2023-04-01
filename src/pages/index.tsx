@@ -62,10 +62,10 @@ export default function Home() {
                 <h2 className='text-5xl py-2 text-blue-400 font-medium md:text-6xl'>Eric Chen</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
                 <p className='text-md mx-auto py-5 leading-8 dark:text-gray-300 text-gray-800 md:text-xl max-w-lg'>
-                  Hi, I recently graduated with a B.S. in Computer Science from Northeastern University.
-                  I&apos;m a passionate developer who is curious about learning new technologies,
-                  and refining my skills. Come take a look below at what I&apos;ve done and
-                  other projects that I plan to work on. 
+                  Hi, I&apos;m a passionate developer who is curious about learning new technologies,
+                  and refining my skills. Recently I&apos;ve been practicing and learning web development skills.
+                  Come take a look below at what I&apos;ve worked on and feel free to connect with me 
+                  on LinkedIn for any inquiries.
                 </p>
               </div>
 
@@ -156,14 +156,14 @@ export default function Home() {
                   >
                     Github
                   </button>
-
+                  
                   <button 
-                    onClick={() => {}}
+                    onClick={() => visitSite('https://www.youtube.com/watch?v=z5ZEfMr7MTE&ab_channel=Eric')}
                     className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
                       md:h-16 md:w-24 w-20 h-20 opacity-80 px-3 py-2 transition
                       group-hover:block hover:scale-110 hidden hover:opacity-100'
                   >
-                    Coming Soon
+                    Video Demo
                   </button>
                 </div>
               </div>
