@@ -52,7 +52,7 @@ export default function Home() {
                 <li>
                   <a className={`bg-gradient-to-br from-blue-400 to-teal-300 px-4 py-2 rounded-md ml-4 
                   ${darkMode ? 'hover:text-black' : 'hover:text-white'}`}
-                  href="Resume Eric Chen.pdf" download="Resume Eric Chen.pdf">Resume</a>
+                  href="April 2023 Software Engineering Resume.pdf" download="April 2023 Software Engineering Resume.pdf">Resume</a>
                 </li>
               </ul>
             </nav>
