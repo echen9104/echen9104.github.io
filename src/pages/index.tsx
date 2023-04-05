@@ -9,7 +9,7 @@ import frontend from 'public/front-end-web-developer-nanodegree--nd001.webp'
 import code from '/public/code.png'
 import netflix from '/public/netflix.png'
 import newclo from '/public/newclo.png'
-import web3 from '../../public/web3.png'
+import travelhub from '../../public/travelhub.png'
 import web4 from '../../public/web4.png'
 import { useState } from 'react'
 
@@ -28,11 +28,11 @@ export default function Home() {
 
   return (
     <>
-      {/* 
-        Introduction and header
-      */}
       <div className={darkMode ? "dark" : ""}>
         <main className='px-10 bg-white text-black md:px-20 lg:px-40 dark:bg-black dark:text-white'>
+          {/* 
+            Introduction and header
+          */}
           <section className='min-h-screen'>
           <nav className='py-10 flex justify-between'>
             <ul className='flex items-center gap-6'>
@@ -145,8 +145,11 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* 
+                NewClo 
+              */}
               <div className='basis-1/3 flex-1 group relative transition shadow-lg delay-100 hover:scale-105'>
-                <Image src={newclo} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <Image src={newclo} alt='' className="border-neutral-400 border-[1px] rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
                   <button 
                     onClick={() => visitSite('https://github.com/echen9104/ecommerce-store')}
@@ -168,16 +171,29 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='basis-1/3 flex-1 group relative transition delay-100 hover:scale-105'>
-                <Image src={web3} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+              {/* 
+                Travel Hub 
+              */}
+              <div className='basis-1/3 flex-1 group relative transition shadow-lg delay-100 hover:scale-105'>
+                <Image src={travelhub} alt='' className="border-neutral-400 border-[1px] rounded-lg object-fill h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
+                  <button 
+                    onClick={() => visitSite('https://github.com/echen9104/travel-hub')}
+                    className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                      md:h-16 md:w-24 w-20 h-20 opacity-80 px-3 py-2 transition
+                      group-hover:block hover:scale-110 hidden hover:opacity-100'
+                  >
+                    Github
+                  </button>
+
                   <button onClick={() => {}}
-                  className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
-                  md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
-                  group-hover:block hover:scale-110 hidden'>Coming Soon
+                    className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                      md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
+                      group-hover:block hover:scale-110 hidden'>Work in Progress
                   </button>
                 </div>
               </div>
+
 
               <div className='basis-1/3 flex-1 group relative transition delay-100 hover:scale-105'>
                 <Image src={web4} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
