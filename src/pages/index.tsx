@@ -7,7 +7,7 @@ import EricPhoto from '/public/ai_eric.png'
 import skills from 'public/tech-skills.webp'
 import frontend from 'public/front-end-web-developer-nanodegree--nd001.webp'
 import code from '/public/code.png'
-import netflix from '/public/netflix.png'
+import netflicks from '/public/netflicks.png'
 import newclo from '/public/newclo.png'
 import travelhub from '../../public/travelhub.png'
 import web4 from '../../public/web4.png'
@@ -132,7 +132,7 @@ export default function Home() {
                 Netflix project
               */}
               <div className='basis-1/3 flex-1 group relative transition delay-100 shadow-lg hover:scale-105'>
-                <Image src={netflix} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <Image src={netflicks} alt='' className="rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
                   <button onClick={() => visitSite('https://github.com/echen9104/netflix-copy')}
                   className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
@@ -142,6 +142,33 @@ export default function Home() {
                   className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
                   md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
                   group-hover:block hover:scale-110 hidden'>Deploy</button>
+                </div>
+              </div>
+
+              {/* 
+                Travel Hub 
+              */}
+              <div className='basis-1/3 flex-1 group relative transition shadow-lg delay-100 hover:scale-105'>
+                <Image src={travelhub} alt='' className="border-neutral-400 border-[1px] rounded-lg object-fill h-full w-full group-hover:opacity-80"/>
+                <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
+                  <button 
+                    onClick={() => visitSite('https://github.com/echen9104/travel-hub')}
+                    className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                      md:h-16 md:w-24 w-20 h-20 opacity-80 px-3 py-2 transition
+                      group-hover:block hover:scale-110 hidden hover:opacity-100'
+                  >
+                    Github
+                  </button>
+
+                  <button onClick={() => visitSite('https://travel-7s32cs6jn-echen9104.vercel.app/')}
+                    className='
+                      text-blue-400 rounded-lg bg-neutral-800 border-white border-2
+                      md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
+                      group-hover:block hover:scale-110 hidden
+                    '
+                  >
+                    Deploy
+                  </button>
                 </div>
               </div>
 
@@ -167,29 +194,6 @@ export default function Home() {
                       group-hover:block hover:scale-110 hidden hover:opacity-100'
                   >
                     Video Demo
-                  </button>
-                </div>
-              </div>
-
-              {/* 
-                Travel Hub 
-              */}
-              <div className='basis-1/3 flex-1 group relative transition shadow-lg delay-100 hover:scale-105'>
-                <Image src={travelhub} alt='' className="border-neutral-400 border-[1px] rounded-lg object-fill h-full w-full group-hover:opacity-80"/>
-                <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
-                  <button 
-                    onClick={() => visitSite('https://github.com/echen9104/travel-hub')}
-                    className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
-                      md:h-16 md:w-24 w-20 h-20 opacity-80 px-3 py-2 transition
-                      group-hover:block hover:scale-110 hidden hover:opacity-100'
-                  >
-                    Github
-                  </button>
-
-                  <button onClick={() => {}}
-                    className='text-blue-400 rounded-lg bg-neutral-800 border-white border-2
-                      md:h-16 md:w-24 w-20 h-20 opacity-80 hover:opacity-100 px-3 py-2 transition
-                      group-hover:block hover:scale-110 hidden'>Work in Progress
                   </button>
                 </div>
               </div>
