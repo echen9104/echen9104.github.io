@@ -11,12 +11,17 @@ import netflicks from '/public/netflicks.png'
 import newclo from '/public/newclo.png'
 import travelhub from '../../public/travelhub.png'
 import web4 from '../../public/web4.png'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const handleScroll = () => {
+    const element = document.getElementById("projects");
+    element?.scrollIntoView({ behavior: "smooth" })
+  }
   
   function visitSite(url: string): void{
     try {
@@ -33,17 +38,17 @@ export default function Home() {
           {/* 
             Introduction and header
           */}
-          <section className='min-h-screen'>
-          <nav className='py-10 flex justify-between'>
-            <ul className='flex items-center gap-6'>
-              <li>
-                <h1 className='text-xl lg:text-3xl font-light hidden md:block'>Eric Chen&apos;s Portfolio</h1>
-              </li>
-              <li>
-                  <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
-                  className='text-2xl cursor-pointer transition hover:scale-105 opacity-70 hover:opacity-100'/>
+          <section className='h-4/6'>
+            <nav className='py-10 flex justify-between'>
+              <ul className='flex items-center gap-6'>
+                <li>
+                  <h1 className='text-xl lg:text-3xl font-light hidden md:block'>Eric Chen&apos;s Portfolio</h1>
                 </li>
-            </ul>
+                <li>
+                    <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
+                    className='text-2xl cursor-pointer transition hover:scale-105 opacity-70 hover:opacity-100'/>
+                </li>
+              </ul>
               <ul className='flex items-center gap-6'>
                 <li>
                   <SiLinkedin onClick={() => visitSite('https://www.linkedin.com/in/eric-chen-bb93a5186/')}
@@ -57,8 +62,8 @@ export default function Home() {
               </ul>
             </nav>
 
-            <div className='lg:flex items-center justify-center lg:pt-24'>
-              <div className='text-center p-10 lg:transform lg:-translate-x-16'>
+            <div className='lg:flex items-center justify-center lg:py-8'>
+              <div className='text-center flex flex-col p-10 lg:transform lg:-translate-x-16'>
                 <h2 className='text-5xl py-2 text-blue-400 font-medium md:text-6xl'>Eric Chen</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'>Software Developer</h3>
                 <p className='text-md mx-auto py-5 leading-8 dark:text-gray-300 text-gray-800 md:text-xl max-w-lg'>
@@ -67,6 +72,20 @@ export default function Home() {
                   Come take a look below at what I&apos;ve worked on and feel free to connect with me 
                   on LinkedIn for any inquiries.
                 </p>
+                <div className='flex flex-row gap-4 items-center justify-center'>
+                  <button 
+                    onClick={handleScroll}
+                    className='
+                      border-[1px] py-2 px-4
+                      rounded-md bg-blue-400
+                      shadow-md transition duration-200
+                      hover:scale-105
+                      hover:bg-blue-300
+                    '
+                  >
+                    Visit Projects
+                  </button>
+                </div>
               </div>
 
               <div className='relative h-80 w-80 lg:mx-0 mx-auto overflow-hidden bg-gradient-to-b from-blue-400 to-black rounded-full my-auto'>
@@ -123,7 +142,7 @@ export default function Home() {
           {/* 
             Portfolio projects
            */}
-          <section>
+          <section id="projects">
             <div>
               <h3 className='text-3xl py-2 text-blue-400'>Projects</h3>
             </div>
@@ -176,7 +195,7 @@ export default function Home() {
                 NewClo 
               */}
               <div className='basis-1/3 flex-1 group relative transition shadow-lg delay-100 hover:scale-105'>
-                <Image src={newclo} alt='' className="border-neutral-400 border-[1px] rounded-lg object-cover h-full w-full group-hover:opacity-80"/>
+                <Image src={newclo} alt='' className="border-neutral-400 border-[1px] rounded-lg object-contain h-full w-full group-hover:opacity-80"/>
                 <div className='flex flex-row gap-10 absolute transform top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2'>
                   <button 
                     onClick={() => visitSite('https://github.com/echen9104/ecommerce-store')}
