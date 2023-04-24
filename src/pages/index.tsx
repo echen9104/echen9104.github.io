@@ -11,7 +11,7 @@ import netflicks from '/public/netflicks.png'
 import newclo from '/public/newclo.png'
 import travelhub from '../../public/travelhub.png'
 import web4 from '../../public/web4.png'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -76,8 +76,9 @@ export default function Home() {
                   <button 
                     onClick={handleScroll}
                     className='
-                      border-[1px] py-2 px-4
-                      rounded-md bg-blue-400
+                      flex flex-row justify-center items-center
+                      border-[1px] py-2 px-4 gap-2
+                      rounded-l-full rounded-r-full bg-blue-400
                       shadow-md transition duration-200
                       hover:scale-105
                       hover:bg-blue-300
